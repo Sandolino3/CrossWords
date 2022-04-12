@@ -1,3 +1,29 @@
 body{
     background-color: rgb(245, 201, 6);
 }
+.table{
+width: 150px;
+margin: auto;
+}
+.word-horizontal input{
+/* position: absolute; */
+
+    max-width: 10px;
+    display: inline;
+    margin-top: 2px;
+
+
+}
+.word-vdrtical input{
+/* position: absolute; */
+    max-width: 10px;
+    display: block;
+    margin-top: 2px;
+}
+
+#third-word{
+position: absolute;
+top:18.7%;
+/* left:41%; */
+
+}
