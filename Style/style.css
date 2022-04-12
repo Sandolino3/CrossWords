@@ -64,4 +64,7 @@ textarea{
    outline: none;
 }
 
-
+.submit-form{
+    caret-color: black;
+    outline:chocolate;
+}
