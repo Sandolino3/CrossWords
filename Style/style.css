@@ -2,28 +2,70 @@ body{
     background-color: rgb(245, 201, 6);
 }
 .table{
-width: 150px;
-margin: auto;
+position:absolute;
+left:250px;
+top:10px;
 }
 .word-horizontal input{
-/* position: absolute; */
-
+    cursor: pointer;
+    margin: 2px;
     max-width: 10px;
     display: inline;
-    margin-top: 2px;
 
 
 }
 .word-vdrtical input{
-/* position: absolute; */
+
+    cursor: pointer;
+    margin: 2px;
     max-width: 10px;
     display: block;
-    margin-top: 2px;
-}
 
+}
+#second-word{
+    position: relative;
+    margin-top: -2.1px;
+}
 #third-word{
 position: absolute;
-top:18.7%;
-/* left:41%; */
+top:49%;
+left:10%;
+}
 
+#forth-word{
+position: absolute;
+left:50.8%;
+top:16%;
+}
+#fift-word{
+    position: absolute;
+}
+
+.question{
+    position: absolute;
+    left:125px;  
+    top: 200px; 
+}
+
+textarea{
+    background-color: rgb(243, 223, 131);
+    pointer-events: none; 
+    /* background-color: blue; */
+}
+.submit-form{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
+
+.selected input{
+    caret-color: transparent;
+   border-color: rgb(128, 252, 5);
+   outline: none;
+}
+
+.select-single{
+    /* caret-color: transparent; */
+   border-color: rgb(126, 247, 5);
+   /* outline: none; */
 }
