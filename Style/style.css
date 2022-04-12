@@ -9,7 +9,7 @@ top:10px;
 .word-horizontal input{
     cursor: pointer;
     margin: 2px;
-    max-width: 10px;
+    max-width: 12px;
     display: inline;
 
 
@@ -18,7 +18,7 @@ top:10px;
 
     cursor: pointer;
     margin: 2px;
-    max-width: 10px;
+    max-width: 12px;
     display: block;
 
 }
@@ -58,14 +58,10 @@ textarea{
     left: 100px;
 }
 
-.selected input{
+.selected{
     caret-color: transparent;
    border-color: rgb(128, 252, 5);
    outline: none;
 }
 
-.select-single{
-    /* caret-color: transparent; */
-   border-color: rgb(126, 247, 5);
-   /* outline: none; */
-}
+
