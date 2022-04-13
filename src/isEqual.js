@@ -1,7 +1,12 @@
-let currentAns = ``
+import { correctAnswer } from "./commitAnswer.js"
 
-function answer(ans){
+
+let currentAns = ''
+let curentId = ''
+
+function answer(ans,id){
     currentAns = ans
+    curentId = id
 }
 
 function submitFunc(e){
@@ -10,15 +15,14 @@ e.preventDefault()
   let formData = new FormData(e.currentTarget)
   let answer = formData.get('answer')
   if (answer === currentAns) {
-      correcnAnswer()
+
+    correctAnswer(answer,curentId)
   }else{
       console.log(`NO`);
   }
 
 }
 
-function correcnAnswer(){
-    console.log(`YES`);
-}
+
 
 export{submitFunc,answer}

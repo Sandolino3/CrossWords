@@ -20,28 +20,28 @@ export function selectRow(e){
         switch (el.id) {
             case'first-word':
             questionField.value=wordsData.words.firstWord.question
-            answer(wordsData.words.firstWord.word)
+            answer(wordsData.words.firstWord.word,'first-word')
             break;
             case'second-word':
             questionField.value=wordsData.words.secondWord.question
-            answer(wordsData.words.secondWord.word)
+            answer(wordsData.words.secondWord.word,'second-word')
             firstCross.classList.add('selected')
             fiftCross.classList.add('selected')
             break;
             case'third-word':
             questionField.value=wordsData.words.thirdWord.question
-            answer (wordsData.words.thirdWord.word)
+            answer (wordsData.words.thirdWord.word,'third-word')
             thirtCross.classList.add('selected')
             forthCross.classList.add('selected')
             break;
             case'forth-word':
             questionField.value=wordsData.words.forthWord.question
-            answer (wordsData.words.forthWord.word)
+            answer (wordsData.words.forthWord.word,'forth-word')
             secondCross.classList.add('selected')
             break;
             case'fift-word':
             questionField.value=wordsData.words.fifthWord.question
-            answer (wordsData.words.fifthWord.word)
+            answer (wordsData.words.fifthWord.word,'fift-word')
             break;
         }
         Array.from(boxElements).map(el=> el.classList.add('selected'))
