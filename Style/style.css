@@ -2,49 +2,61 @@ body{
     background-color: rgb(245, 201, 6);
 }
 .table{
-position:absolute;
+position: absolute;
 left:250px;
 top:10px;
+height: 200px;
+width: 500px;
+}
+input{
+    opacity: 0.70;
 }
 .word-horizontal input{
+    
     cursor: pointer;
     margin: 2px;
-    max-width: 12px;
+    height: 30px; 
+    width: 30px; 
     display: inline;
 
 
 }
 .word-vdrtical input{
-
     cursor: pointer;
     margin: 2px;
-    max-width: 12px;
+    height: 30px; 
+    width: 30px; 
     display: block;
 
 }
 #second-word{
-    position: relative;
-    margin-top: -2.1px;
+    position: absolute;
+    margin-top: 1px;
 }
 #third-word{
 position: absolute;
-top:49%;
-left:10%;
+top:48%;
+left:7%;
+}
+
+#margin-el{
+    margin-top: -1px;
 }
 
 #forth-word{
 position: absolute;
-left:50.8%;
+left:38%;
 top:16%;
 }
 #fift-word{
     position: absolute;
+    top: 96%;
 }
 
 .question{
     position: absolute;
-    left:125px;  
-    top: 200px; 
+    left:210px;  
+    top: 290px; 
 }
 
 textarea{
@@ -53,18 +65,16 @@ textarea{
     /* background-color: blue; */
 }
 .submit-form{
-    position: absolute;
-    top: 80px;
-    left: 100px;
+    position: relative;
+    top: 40px;
+    left: 107px;
 }
 
 .selected{
-    caret-color: transparent;
+    opacity: 1;
+    /* caret-color: transparent; */
    border-color: rgb(128, 252, 5);
    outline: none;
 }
+/* 
 
-.submit-form{
-    caret-color: black;
-    outline:chocolate;
-}

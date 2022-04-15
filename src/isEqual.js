@@ -13,12 +13,17 @@ function submitFunc(e){
 e.preventDefault()
 // console.log(ans);
   let formData = new FormData(e.currentTarget)
+  let answerField = document.getElementById('answer-field')
   let answer = formData.get('answer')
   if (answer === currentAns) {
 
     correctAnswer(answer,curentId)
+    answerField.style.borderColor = 'green'
+
+    answerField.value = ''
   }else{
-      console.log(`NO`);
+    answerField.style.borderColor = 'red'
+
   }
 
 }

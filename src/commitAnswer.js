@@ -36,19 +36,23 @@ export function correctAnswer(answer,id){
         break;
         case'forth-word':
         secondCross.value = ansWord[0]
+        ansWord.shift()
+
         for (let i = 0; i < ansWord.length; i++) {
             wordFealds[i].value = ansWord[i]  
         }
         break;
         case'fift-word':
-
+        for (let i = 0; i < ansWord.length; i++) {
+            wordFealds[i].value = ansWord[i]  
+        }
         break;
     }
     // wordFealds[1].value = 'a'
-    for (let i = 0; i < ansWord.length; i++) {
-        wordFealds[i].value = ansWord[i]
+    // for (let i = 0; i < ansWord.length; i++) {
+    //     wordFealds[i].value = ansWord[i]
         
-    }
+    // }
 
     // console.log(wordFealds);
 }
