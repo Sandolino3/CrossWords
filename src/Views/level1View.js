@@ -6,10 +6,10 @@ const answerTemplate = (levelTemp,submitFunc)=>html`
 <div class="table">
 ${levelTemp}
 <div class="question">
-    <textarea name="question" id="question-field" cols="60" rows="4"></textarea>
+    <textarea name="question" id="question-field" cols="60" rows="6"></textarea>
     <form @submit=${submitFunc} class="submit-form" id="subm-form" autocomplete="off">
         <input type="text" name="answer" id="answer-field">
-        <button>Submit</button>
+        <button class="submit-button">Submit</button>
     </form>
 </div>
 

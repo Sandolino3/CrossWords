@@ -1,11 +1,15 @@
 body{
-    background-color: rgb(245, 201, 6);
+    /* background-color: rgb(245, 201, 6); */
+    background-image: url("../images/viber_image_2022-04-15_16-21-54-292.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-style: italic;
 }
 .table{
 position: absolute;
 left:500px;
-top:100px;
+top:80px;
 height: 200px;
 width: 500px;
 }
@@ -16,28 +20,29 @@ input{
     
     cursor: pointer;
     margin: 2px;
-    height: 30px; 
-    width: 30px; 
+    height:40px; 
+    width:40px; 
     display: inline;
-
+    font-size:x-large;
 
 }
 .word-vdrtical input{
     cursor: pointer;
     margin: 2px;
-    height: 30px; 
-    width: 30px; 
+    height:40px; 
+    width:40px; 
     display: block;
+    font-size:x-large;
 
 }
 #second-word{
     position: absolute;
-    margin-top: 1px;
+    margin-top: -1.8px;
 }
 #third-word{
 position: absolute;
-top:48%;
-left:7%;
+top:63%;
+left:9.5%;
 }
 
 #margin-el{
@@ -46,29 +51,51 @@ left:7%;
 
 #forth-word{
 position: absolute;
-left:38%;
-top:16%;
+left:48%;
+top:21%;
 }
 #fift-word{
     position: absolute;
-    top: 96%;
+    top: 127%;
 }
 
 .question{
     position: absolute;
-    left:-100px;  
-    top: 290px; 
+    left:-120px;  
+    top: 320px; 
+    /* font-size:x-large; */
+
 }
 
 textarea{
-    background-color: rgb(243, 223, 131);
+    font-size:x-large;
     pointer-events: none; 
+    opacity: 0.7;
+
     /* background-color: blue; */
 }
-.submit-form{
+.submit-button{
     position: relative;
-    top: 40px;
-    left: 107px;
+    top: 50px;
+    left: -80px;
+    width: 100px;
+    height: 40px;
+    opacity: 0.70;
+    font-size:x-large;
+
+}
+.submit-button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#answer-field{
+    position: relative;
+    top: 0px;
+    left: 135px;
+    width: 300px;
+    height: 30px;
+    font-size:x-large;
+
 }
 
 .selected{
