@@ -16,50 +16,73 @@ ${levelTemp}
 </div>
 `
 
-const level1Template = (selectRow)=>html`
+const level1Template = (selectRow,com)=>html`
+${console.log(com)
+}
  <div class="word-horizontal" id="first-word">
-        <input @click=${selectRow} type="button" id="first-cross" value=" ">
-        <input @click=${selectRow} type="button" value=" ">
-        <input @click=${selectRow} type="button" value=" ">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" " id="second-cross">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
+        <input @click=${selectRow} type="button" id="w1" value=" " class="w2">
+        <input @click=${selectRow} type="button"id="w1" value=" ">
+        <input @click=${selectRow} type="button"id="w1" value=" ">
+        <input @click=${selectRow} type="button"id="w1" value=" ">
+        <input @click=${selectRow} type="button"id="w1" value=" ">
+        <input @click=${selectRow} type="button"id="w1" value=" " class="w4">
+        <input @click=${selectRow} type="button"id="w1" value=" ">
+        <input @click=${selectRow} type="button"id="w1" value=" ">
+        <input @click=${selectRow} type="button"id="w1" value=" " class="w6">
+        <input @click=${selectRow} type="button"id="w1" value=" ">
     </div>
 
     <div class="word-vdrtical" id="second-word">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" " id="margin-el">
-        <input @click=${selectRow} type="button"value=" " id="third-cross"">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
+        <input @click=${selectRow} type="button"value=" " id="w2">
+        <input @click=${selectRow} type="button"value=" " id="w2">
+        <input @click=${selectRow} type="button"value=" " id="w2" class ="w3">
+        <input @click=${selectRow} type="button"value=" " id="w2">
+        <input @click=${selectRow} type="button"value=" " id="w2">
     </div>
 
     <div class="word-horizontal" id="third-word">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
+        <input @click=${selectRow} type="button"value=" " id="w3">
+        <input @click=${selectRow} type="button"value=" " id="w3" class ="w7">
+        <input @click=${selectRow} type="button"value=" " id="w3">
+        <input @click=${selectRow} type="button"value=" " id="w3">
 
     </div>
     <div class="word-vdrtical" id="forth-word">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" " id="forth-cross">
+        <input @click=${selectRow} type="button"value=" " id="w4">
+        <input @click=${selectRow} type="button"value=" " id="w4" class ="w8">
+        <input @click=${selectRow} type="button"value=" " id="w4" class ="w3">
     </div>
     <div class="word-horizontal" id="fift-word">
-        <input @click=${selectRow} type="button"value=" " id="fift-cross">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
-        <input @click=${selectRow} type="button"value=" ">
-</div>
+        <input @click=${selectRow} type="button"value=" " id="w5" class ="w2">
+        <input @click=${selectRow} type="button"value=" " id="w5">
+        <input @click=${selectRow} type="button"value=" " id="w5" class="w7">
+        <input @click=${selectRow} type="button"value=" " id="w5">
+        <input @click=${selectRow} type="button"value=" " id="w5">
+        <input @click=${selectRow} type="button"value=" " id="w5">
+    </div>
+    <div class="word-vdrtical" id="sixt-word">
+        <input @click=${selectRow} type="button"value=" " id="w6">
+        <input @click=${selectRow} type="button"value=" " id="w6" class="w8">
+        <input @click=${selectRow} type="button"value=" " id="w6">
+    </div>
+    <div class="word-vdrtical" id="sevent-word">
+        <input @click=${selectRow} type="button"value=" " id="w7">
+        <input @click=${selectRow} type="button"value=" " id="w7">
+    </div>
+    <div class="word-vdrtical" id="sevent-word-two">
+        <input @click=${selectRow} type="button"value=" " id="w7">
+    </div>
+    <div class="word-horizontal" id="eigth-word">
+        <input @click=${selectRow} type="button"value=" " id="w8">
+        <input @click=${selectRow} type="button"value=" " id="w8">
+    </div>
+    <div class="word-horizontal" id="eigth-word-two">
+        <input @click=${selectRow} type="button"value=" " id="w8">
+    </div>
 `
 
 export function level1View(ctx){
    ctx.render(answerTemplate(level1Template(selectRow),submitFunc))
+
+
 }

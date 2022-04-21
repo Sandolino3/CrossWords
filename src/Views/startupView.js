@@ -6,8 +6,8 @@ const startupTemplate = ()=>html`
     <button class="start-game" >
         <a href="/start">START GAME</a>
     </button>
-    <button class="login">login</button>
-    <button class="register">register</button>
+    <!-- <button class="login">login</button>
+    <button class="register">register</button> -->
 </div>
 `
 

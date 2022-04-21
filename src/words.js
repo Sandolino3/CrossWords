@@ -1,25 +1,37 @@
  let wordsData = {
     words: {
-        firstWord: {
+        w1: {
             word: "калкулатор",
             question:"Изчислително устройство?",
         },
-        secondWord: {
+        w2: {
             word: "клисура",
             question:"Тесен планински проход?",
         },
-        thirdWord: {
+        w3: {
             word: "стряха",
             question:"Долна част на покрив?",
            
         },
-        forthWord: {
+        w4: {
             word: "липа",
             question:"Ароматно дърво?",
         },
-        fifthWord: {
+        w5: {
             word: "ананас",
             question:"Тропически плод?",
+        },
+        w6: {
+            word: "опал",
+            question:"Вид скъпоценен камък?",
+        },
+        w7: {
+            word: "риган",
+            question:"тревисто растение от семейство Устноцветни?",
+        },
+        w8: {
+            word: "палат",
+            question:"Дворец, замък?",
         },
     },
 };
