@@ -26,6 +26,4 @@ e.preventDefault()
 
 }
 
-
-
 export{submitFunc,answer}

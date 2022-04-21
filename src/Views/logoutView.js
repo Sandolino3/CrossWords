@@ -1,3 +1,5 @@
+import { logout } from "../util/data.js";
 export function logoutView(){
-    console.log(`asd`);
+    logout()
+    ctx.page.redirect('/')
 }
