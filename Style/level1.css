@@ -1,0 +1,43 @@
+#second-word{
+    position: absolute;
+}
+#third-word{
+position: absolute;
+top:64.6%;
+left:8.9%;
+}
+
+#forth-word{
+position: absolute;
+left:44.6%;
+top:20%;
+}
+#fift-word{
+    position: absolute;
+    top: 129%;
+}
+#sixt-word{
+    position: absolute;
+    top: 20%;
+    left: 71.3%;
+}
+#sevent-word{
+    position: absolute;
+    top: 84.5%;
+    left: 17.8%;
+}
+#sevent-word-two{
+    position: absolute;
+    top: 149%;
+    left: 17.8%; 
+}
+#eigth-word{
+    position: relative;
+    top: 23.4%;
+    left: 53.5%;
+}
+#eigth-word-two{
+    position: relative;
+    top: 3.5%;
+    left: 80%;
+}
