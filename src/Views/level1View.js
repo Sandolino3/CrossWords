@@ -32,7 +32,7 @@ ${console.log(com)
         <input @click=${selectRow} type="button"id="w1" value=" ">
     </div>
 
-    <div class="word-vdrtical" id="second-word">
+    <div class="word-vdrtical" id="second-word" position:"absolute">
         <input @click=${selectRow} type="button"value=" " id="w2">
         <input @click=${selectRow} type="button"value=" " id="w2">
         <input @click=${selectRow} type="button"value=" " id="w2" class ="w3">
