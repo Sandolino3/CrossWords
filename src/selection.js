@@ -1,15 +1,22 @@
-import { wordsData } from "./words.js";
-import { answer } from "./isEqual.js";
 
-export function selectRow(e){
+import { answer } from "./isEqual.js";
+import { getById } from "./util/data.js";
+
+export async function selectRow(e){
     let boxElements = document.querySelectorAll('input')
     let AllElementsId = e.currentTarget.id
     let questionField = document.getElementById('question-field')
-    questionField.value = wordsData.words[AllElementsId].question
+
+    let data = await getById(AllElementsId)
+    questionField.value = data.question
+
+    document.getElementById("answer-field").focus();
+
 
     Array.from(boxElements).map(el=>el.classList.remove('selected'));
 
-    answer(wordsData.words[AllElementsId].word,AllElementsId)
+    answer(AllElementsId)
+    
     boxElements.forEach(el=>{
    
         if (el.id === AllElementsId || Array.from(el.classList).includes(AllElementsId)) {

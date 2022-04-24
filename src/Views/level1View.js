@@ -8,7 +8,7 @@ ${levelTemp}
 <div class="question">
     <textarea name="question" id="question-field" cols="60" rows="4"></textarea>
     <form @submit=${submitFunc} class="submit-form" id="subm-form" autocomplete="off">
-        <input type="text" name="answer" id="answer-field">
+        <input type="text" name="answer" id="answer-field"  onfocus="">
         <button class="submit-button">Submit</button>
     </form>
 </div>
@@ -16,9 +16,8 @@ ${levelTemp}
 </div>
 `
 
-const level1Template = (selectRow,com)=>html`
-${console.log(com)
-}
+const level1Template = (selectRow)=>html`
+
  <div class="word-horizontal" id="first-word">
         <input @click=${selectRow} type="button" id="w1" value=" " class="w2">
         <input @click=${selectRow} type="button"id="w1" value=" ">
@@ -32,7 +31,7 @@ ${console.log(com)
         <input @click=${selectRow} type="button"id="w1" value=" ">
     </div>
 
-    <div class="word-vdrtical" id="second-word" position:"absolute">
+    <div class="word-vdrtical" id="second-word">
         <input @click=${selectRow} type="button"value=" " id="w2">
         <input @click=${selectRow} type="button"value=" " id="w2">
         <input @click=${selectRow} type="button"value=" " id="w2" class ="w3">
@@ -83,6 +82,5 @@ ${console.log(com)
 
 export function level1View(ctx){
    ctx.render(answerTemplate(level1Template(selectRow),submitFunc))
-
 
 }

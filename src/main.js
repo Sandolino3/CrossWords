@@ -18,9 +18,6 @@ page('/login',loginFunc)
 page('/register',registerView)
 page('/logout',logoutView)
 
-
-
-
 page.start()
 
 

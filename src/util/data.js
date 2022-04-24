@@ -37,15 +37,15 @@ export async function register(email,password){
 }
 
 export async function getItems(){
-    return api.get('/data/albums?sortBy=_createdOn%20desc&distinct=name')
+    return api.get('/data/words')
 }
 
 export async function createItem(data){
-    return await api.post('/data/albums',data)
+    return await api.post('/data/words',data)
 }
 
 export async function getById(id){
-return api.get(`/data/albums/${id}`)
+return api.get(`/data/words/${id}`)
 }
 
 export async function del(id){

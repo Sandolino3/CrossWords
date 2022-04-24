@@ -5,5 +5,4 @@ export function correctAnswer(answer,id){
            el.value = answer[i] 
            i++
     }})
-
 }
