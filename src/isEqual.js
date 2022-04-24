@@ -27,8 +27,7 @@ e.preventDefault()
     answerField.value = ''
     answerCounter++
     if (answerCounter >= 8) {
-      alert('level complete')
-      return
+      document.querySelector('.level-complete').style.display='inline'
     }
   }else{
     answerField.style.borderColor = 'red'

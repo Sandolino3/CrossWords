@@ -1,4 +1,6 @@
 .start-game{
+    border-radius: 10px;
+
     font-size:xx-large;
     position: relative; 
     width: 400px;

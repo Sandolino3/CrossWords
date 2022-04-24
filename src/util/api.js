@@ -1,4 +1,4 @@
-const host = 'http://localhost:3030'
+const host = 'https://crosswords-puzzle-game.herokuapp.com'
 import { getUserData } from "./util.js"
 
 

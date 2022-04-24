@@ -18,6 +18,12 @@ ${levelTemp}
 
 const level1Template = (selectRow)=>html`
 
+<div class="level-complete">
+    <p class="level-complete-text">Ypu have complete level 1</p>
+    <button class="level-complete-b"><a href="/start">Level selection</a></button>
+    <button class="level-complete-b"><a href="/start">Next level</a></button>
+</div>
+
  <div class="word-horizontal" id="first-word">
         <input @click=${selectRow} type="button" id="w1" value=" " class="w2">
         <input @click=${selectRow} type="button"id="w1" value=" ">
