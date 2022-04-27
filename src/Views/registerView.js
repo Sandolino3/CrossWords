@@ -26,12 +26,12 @@ async  function registerFunc(e){
 
     let email = formData.get('email')
     let password = formData.get('password')
-    let rePass = formData.get('conf-pass')
+    let rePass = formData.get('passwordRe')
     if (email == ''|| password =='') {
         alert('fealds are empty!')
         return
     }
-    if (password === rePass) {
+    if (password !== rePass) {
         alert('password did not match')
         return
     }
