@@ -1,0 +1,29 @@
+.level-complete{
+    display: none;
+    background-color: rgb(255, 196, 0);
+    position: absolute;
+    z-index: 100;
+    opacity: 0.9;
+    width: 450px;
+    height: 200px;
+    border-radius: 20px;
+    text-align: center;
+    font-size:xx-large;
+    border-radius: 10px;
+
+}
+
+.level-complete-b{
+    /* position: absolute; */
+    width: 150px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 5px;
+    opacity: 0.9;
+
+
+}
+.level-complete-b:hover{
+    cursor: pointer;
+    opacity: none;
+}

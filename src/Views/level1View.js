@@ -1,12 +1,17 @@
 import { html } from "../../node_modules/lit-html/lit-html.js";
 import { selectRow } from "../selection.js";
-import { submitFunc } from "../isEqual.js";
+import { submitFunc,getWord } from "../isEqual.js";
 
-const answerTemplate = (levelTemp,submitFunc)=>html`
+
+const answerTemplate = (levelTemp,submitFunc,getWord)=>html`
+    <div class="help">
+    <button class="help-b" @click=${getWord}>Get word</button>
+    <!-- <button class="help-b">Get letter</button> -->
+    </div>
 <div class="table">
 ${levelTemp}
 <div class="question">
-    <textarea name="question" id="question-field" cols="60" rows="4"></textarea>
+    <textarea name="question" id="question-field" cols="60" rows="3"></textarea>
     <form @submit=${submitFunc} class="submit-form" id="subm-form" autocomplete="off">
         <input type="text" name="answer" id="answer-field"  onfocus="">
         <button class="submit-button">Submit</button>
@@ -87,6 +92,7 @@ const level1Template = (selectRow)=>html`
 `
 
 export function level1View(ctx){
-   ctx.render(answerTemplate(level1Template(selectRow),submitFunc))
+   ctx.render(answerTemplate(level1Template(selectRow),submitFunc,getWord))
+
 
 }

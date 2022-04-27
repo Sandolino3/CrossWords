@@ -35,11 +35,11 @@ input {
   position: absolute;
   left: -120px;
   top: 350px;
+
 }
 
 textarea {
   border-radius: 15px;
-
   font-size: x-large;
   pointer-events: none;
   opacity: 0.7;
@@ -66,7 +66,9 @@ textarea {
   height: 30px;
   font-size: x-large;
 }
-
+#question-field{
+  padding: 10px;
+}
 .selected {
   opacity: 1;
   border-color: rgb(128, 252, 5);

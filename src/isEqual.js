@@ -13,7 +13,7 @@ async function answer(id){
 }
 
 function submitFunc(e){
-e.preventDefault()
+  e.preventDefault()
   let formData = new FormData(e.currentTarget)
   let answerField = document.getElementById('answer-field')
   let answer = formData.get('answer')
@@ -36,4 +36,16 @@ e.preventDefault()
 
 }
 
-export{submitFunc,answer}
+function getWord(){
+  if (currentAns === ``) {
+    alert('Please select field!')
+  return
+  }
+  correctAnswer(currentAns,curentId)
+  answerCounter++
+  if (answerCounter >= 8) {
+    document.querySelector('.level-complete').style.display='inline'
+  }
+}
+
+export{submitFunc,answer,getWord}
