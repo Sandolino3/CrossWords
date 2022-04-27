@@ -1,4 +1,3 @@
-
 import { answer } from "./isEqual.js";
 import { getById } from "./util/data.js";
 

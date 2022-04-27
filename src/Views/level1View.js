@@ -1,4 +1,5 @@
-import { html } from "../../node_modules/lit-html/lit-html.js";
+// import { html } from "../../node_modules/lit-html/lit-html.js";
+import { html } from"../Lit-html.js"
 import { selectRow } from "../selection.js";
 import { submitFunc,getWord } from "../isEqual.js";
 
@@ -93,6 +94,5 @@ const level1Template = (selectRow)=>html`
 
 export function level1View(ctx){
    ctx.render(answerTemplate(level1Template(selectRow),submitFunc,getWord))
-
 
 }

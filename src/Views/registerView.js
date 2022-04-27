@@ -1,4 +1,6 @@
-import { html } from "../../node_modules/lit-html/lit-html.js";
+// import { html } from "../../node_modules/lit-html/lit-html.js";
+import { html } from"../Lit-html.js"
+
 import { register } from "../util/data.js";
 
 const loginTemplate = (registerFunc)=>html`
@@ -29,7 +31,7 @@ async  function registerFunc(e){
         alert('fealds are empty!')
         return
     }
-    if (password !== rePass) {
+    if (password === rePass) {
         alert('password did not match')
         return
     }

@@ -1,4 +1,4 @@
-import {render} from "../node_modules/lit-html/lit-html.js"
+import {render} from "./Lit-html.js"
 import{navigationView} from "./Views/navView.js"
 import {getUserData} from "./util/util.js"
 

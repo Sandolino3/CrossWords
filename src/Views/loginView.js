@@ -1,4 +1,6 @@
-import { html } from "../../node_modules/lit-html/lit-html.js";
+// import { html } from "../../node_modules/lit-html/lit-html.js";
+import { html } from"../Lit-html.js"
+
 import{login} from"../util/data.js"
 
 const loginTemplate = (loginFu)=>html`

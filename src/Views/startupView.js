@@ -1,4 +1,6 @@
-import { html } from "../../node_modules/lit-html/lit-html.js";
+// import { html } from "../../node_modules/lit-html/lit-html.js";
+import { html } from"../Lit-html.js"
+
 
 const startupTemplate = (startF)=>html`
 <div class="startup-screen">

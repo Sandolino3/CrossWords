@@ -1,5 +1,6 @@
 import { renderContext, renderNav, authMid } from "./renderMid.js"
-import page from "../node_modules/page/page.mjs"
+// import page from "../node_modules/page/page.mjs"
+import page from "//unpkg.com/page@1.11.6/page.mjs";
 import { startupView } from "./Views/startupView.js"
 import { levelSelect } from "./Views/levelSelectionView.js"
 import { level1View } from "./Views/level1View.js"
