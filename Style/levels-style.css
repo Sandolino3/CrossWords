@@ -74,3 +74,21 @@ textarea {
   border-color: rgb(128, 252, 5);
   outline: none;
 }
+
+.help{
+  position:absolute;
+  left: 20px;
+  top: 60px;
+}
+.help-b{
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  opacity: 0.7;
+
+}
+
+.help-b:hover{
+  cursor: pointer;
+  opacity: 1;
+}

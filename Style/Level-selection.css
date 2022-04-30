@@ -1,24 +1,25 @@
 .level-button{
+    /* position:fixed; */
     border-radius: 10px;
-
-    position:relative;
     width: 70px;
     height: 70px;
     margin: 20px;
-    left: 450px;
-    top: 50px ;
     opacity: 0.70;
     font-size: xx-large;
+}
 
-
+#selection-buttons{
+    position: fixed;
+    left: 35%;
+    top: 35%;
 }
 .level-button:hover{
     cursor: pointer;
     opacity: 1;
 }
 .select-text{
-    position: relative; 
-    top: 50px;
-    left:480px;
+    position:absolute;
     font-size:5ch; 
+    left: 30px;
+    top: -75px;
 }

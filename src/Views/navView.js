@@ -12,9 +12,11 @@ const userTemp = html`
 const navTemplate = (user)=>html`
     <nav>
         <button class="nav-btn"><a href="/"><i class="fa fa-home"></i></a></button>
+    
         ${user
         ?userTemp
         :guestTemp}
+        
     </nav>
 `
 
