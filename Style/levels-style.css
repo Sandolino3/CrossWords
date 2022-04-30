@@ -1,5 +1,5 @@
 .table {
-  position: absolute;
+  position: fixed;
   left: 500px;
   top: 65px;
   height: 200px;
@@ -32,9 +32,9 @@ input {
 }
 
 .question {
-  position: absolute;
-  left: -120px;
-  top: 350px;
+  position: fixed;
+  left: 25%;
+  top: 68%;
 
 }
 
@@ -46,9 +46,9 @@ textarea {
 }
 .submit-button {
   border-radius: 10px;
-  position: relative;
-  top: 45px;
-  left: -60px;
+  position: fixed;
+  top: 90%;
+  left: 45%;
   width: 100px;
   height: 40px;
   opacity: 0.7;
@@ -59,9 +59,10 @@ textarea {
   cursor: pointer;
 }
 #answer-field {
-  position: relative;
-  top: 0px;
-  left: 160px;
+  padding: 10px;
+  position: fixed;
+  top: 83%;
+  left: 40%;
   width: 300px;
   height: 30px;
   font-size: x-large;
@@ -76,7 +77,7 @@ textarea {
 }
 
 .help{
-  position:absolute;
+  position:fixed;
   left: 20px;
   top: 60px;
 }

@@ -12,6 +12,7 @@
 
 body{
     background-image: url("../images/viber_image_2022-04-15_16-21-54-292.jpg");
+    background-color: rgb(77, 243, 77);
     background-position: center;
     background-repeat: no-repeat;
     background-size:auto;
@@ -20,5 +21,6 @@ body{
     position: fixed; 
 
 }
+
 
 

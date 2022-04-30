@@ -23,3 +23,47 @@
     left: 30px;
     top: -75px;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    .level-button{
+        width: 60px;
+        height: 60px;
+        margin: 15px;
+        font-size: xx-large;
+    }
+    
+    #selection-buttons{
+        position: fixed;
+        left: 20%;
+        top: 35%;
+    }
+    .select-text{
+        position:absolute;
+        font-size:3.5ch; 
+        left: 35px;
+        top: -70px;
+    } 
+}
+
+@media only screen and (max-width: 390px) {
+    .level-button{
+        width: 45px;
+        height: 45px;
+        margin: 15px;
+        font-size: xx-large;
+    }    
+    #selection-buttons{
+        position: fixed;
+        left: 15%;
+        top: 35%;
+    }
+    .select-text{
+        position:absolute;
+        font-size:3.5ch; 
+        left: 30px;
+        top: -70px;
+    }
+}
+
