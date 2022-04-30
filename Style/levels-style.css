@@ -48,7 +48,7 @@ textarea {
   border-radius: 10px;
   position: fixed;
   top: 90%;
-  left: 48%;
+  left: 46%;
   width: 100px;
   height: 40px;
   opacity: 0.7;
@@ -102,14 +102,16 @@ textarea {
   }
   #answer-field {
 
-    top: 84%;
+    top: 84.5%;
 
   }
   .submit-button{
-    top: 91%;
+    top: 91.5%;
   }
 }
-@media only screen and (max-width: 920px){
+
+
+/* @media only screen and (max-width: 920px){
   textarea{
     width: 400px;
   
@@ -125,10 +127,10 @@ textarea {
   .submit-button{
    left:42%;
   }
-}
-@media only screen and (max-width: 400px){
+} */
+@media only screen and (max-width: 500px){
   textarea{
-    width: 250px;
+    width: 320px;
   
   }
   .question {
@@ -137,7 +139,7 @@ textarea {
   #answer-field {
 
     left: 15%;
-    width: 200px;
+    width: 250px;
   }
   .submit-button{
    left:35%;
