@@ -37,3 +37,16 @@ nav a{
 .hide{
     display: none;
 }
+
+@media only screen and (max-height: 600px) {
+    nav{
+        height: 35px;
+    }
+    .nav-btn{
+        height: 20px;
+        width: 20px;
+margin-left: 25px;
+    
+    }
+
+}
